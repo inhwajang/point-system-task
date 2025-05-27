@@ -1,2 +1,11 @@
-package com.example.pointsystem;public class PointSystemTaskApplication {
+package com.example.pointsystem;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class PointSystemTaskApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(PointSystemTaskApplication.class);
+    }
 }

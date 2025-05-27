@@ -1,24 +1,14 @@
 
 package com.example.pointsystem.repository;
 
-import com.example.pointsystem.domain.Point;
-import com.example.pointsystem.dto.PointRequestDto;
-import com.example.pointsystem.dto.PointResponseDto;
+import com.example.pointsystem.domain.PointTransaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface PointRepository extends JpaRepository<Point, Long> {
+public interface PointTransactionRepository extends JpaRepository<PointTransaction, Long> {
     // TODO: 필요한 쿼리 작성
 
-    // findAll
-
-
-    PointResponseDto findByUserId(Long userId);
-
-
-
-    List<Point> findAll();
-
+    List<PointTransaction> findByUserId(Long userId);
 
 }
