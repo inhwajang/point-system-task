@@ -14,6 +14,15 @@ public class PointTransaction {
     private String description;
     private LocalDateTime createdAt;
     private PointType type;
+    private String transactionId;
+
+    public String getTransactionId() {
+        return transactionId;
+    }
+
+    public void setTransactionId(String transactionId) {
+        this.transactionId = transactionId;
+    }
 
     public PointType getType() {
         return type;
